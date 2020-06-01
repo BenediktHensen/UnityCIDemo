@@ -28,3 +28,9 @@ jobs:
         uses: webbertakken/unity-test-runner@v1.6
         with:
           unityVersion: 2018.4.15f1
+          
+          
+      - uses: actions/upload-artifact@v1
+        with:
+          name: Test results
+          path: artifacts
